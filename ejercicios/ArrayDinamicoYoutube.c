@@ -25,7 +25,9 @@ char *leerMensaje(void){
         return NULL;
     }
 
-    scanf("%c", &(*(pChar + ultimo)));
+    *(pChar + ultimo) = getc(stdin);
+    //printf("caracter: %c\n", caracter);
+ //   scanf("%c", &(*(pChar + ultimo)));
 
     while(*(pChar + ultimo) != '\n'){
 
